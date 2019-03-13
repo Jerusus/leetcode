@@ -6,7 +6,7 @@ class Solution {
     int cur = root.val;
     if (val > cur) {
       return searchBST(root.right, val);
-    } else if (var < cur) {
+    } else if (val < cur) {
       return searchBST(root.left, val);
     } else {
       return root;
