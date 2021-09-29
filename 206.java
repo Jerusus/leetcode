@@ -1,7 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class ListNode {
+class ListNode {
   int val;
   ListNode next;
 
