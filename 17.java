@@ -5,8 +5,10 @@ import java.util.Map;
 
 class Solution {
     Map<Character, String> map = new HashMap<>();
+
     public List<String> letterCombinations(String digits) {
-        if (digits.length() == 0) return new ArrayList<String>();
+        if (digits.length() == 0)
+            return new ArrayList<String>();
         map.put('2', "abc");
         map.put('3', "def");
         map.put('4', "ghi");
@@ -28,6 +30,5 @@ class Solution {
         for (int i = 0; i < map.get(digits.charAt(0)).length(); i++) {
             permute(res, digits.substring(1), current + map.get(digits.charAt(0)).charAt(i));
         }
-        return;
     }
 }
